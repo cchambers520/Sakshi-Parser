@@ -25,7 +25,8 @@ print(data_group)
 plt.figure("Sakshi makes a plot")
 plt.clf()
 for i in steps:
-    plt.plot(data_group.get_group(i).groupby('dipole_freq')['tof'].mean(), '-o')
+    plt.plot(data_group.get_group(i).groupby('dipole_freq')['tof'].mean(), '-o', label = i[1:-1])
+plt.legend()
 plt.show()
 
 plt.savefig('sakshiPlot.jpg')
