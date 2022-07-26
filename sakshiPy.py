@@ -3,10 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-os.getcwd()
-os.listdir()
-
-data = pd.read_csv('run10109.csv',sep = ',')
+data = pd.read_csv(os.getcwd()+'\\run10109.csv',sep = ',')
 
 current_step = 0.0
 for i in range(len(data['step_value_epics'])):
