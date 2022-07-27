@@ -25,4 +25,4 @@ for i in steps:
     plt.plot(data_group.get_group(i).groupby('dipole_freq')['tof'].mean(), '-o', label = i[1:-1])
 #plt.show()
 
-plt.savefig('sakshiPlot.jpg')
+#plt.savefig('sakshiPlot.jpg')
